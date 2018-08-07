@@ -10,11 +10,9 @@ import Foundation
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-//Solution 1
+//Solution 1 - Complexity O(1)
 func solution( str: String ) -> Bool{
-    var reversed = ""
-
-    return str == reversed
+    return str == String( str.reversed() )
 }
 
 //Test
