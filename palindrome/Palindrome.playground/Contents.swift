@@ -1,5 +1,6 @@
 import Cocoa
 import Foundation
+import simd
 
 // --- Directions
 // Given a string, return true if the string is a palindrome
@@ -47,3 +48,4 @@ print( "\"1000001\" is a palindrome - \( solution(str: "1000001") ? "PASS" : "FA
 print( "\"abcdefg\" is a palindrome - \( solution(str: "abcdefg") ? "PASS" : "FAIL" )" )
 print( "\"abc \" is a palindrome - \( solution(str: " abc") ? "PASS" : "FAIL" )" )
 print( "\"Fish hsif\" is a palindrome - \( solution(str: "Fish hsif") ? "PASS" : "FAIL" )" )
+
