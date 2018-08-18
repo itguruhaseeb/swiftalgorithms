@@ -36,7 +36,6 @@ func capitalize( _ str: String ) -> String{
         }
     }
 
-    print( capitalized )
     return capitalized
 }
 
