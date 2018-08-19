@@ -15,7 +15,12 @@ func vowels( _ str: String ) -> Int{
     let regex   = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive)
     let matches = regex?.matches(in: str, options: [], range: NSMakeRange(0, str.count))
 
-    return matches!.count
+    if let count = matches?.count{
+        return count
+    }
+
+    return 0
+
 }
 
 

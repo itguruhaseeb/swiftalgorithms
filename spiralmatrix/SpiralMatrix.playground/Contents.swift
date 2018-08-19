@@ -1,5 +1,6 @@
 import Cocoa
 
+//Solution 1
 func spiralMatrix( _ n: Int ){
 
     // Init an all-zero matrix
@@ -44,3 +45,55 @@ func spiralMatrix( _ n: Int ){
     matrix.forEach { print($0) }
 
 }
+
+//Solution 2
+//func spiralMatrix( _ n: Int ){
+//    var matrix   = [Int](repeating: 0, count: n)
+//    var matrices = Array(repeating: matrix, count: n)
+//
+//    var number = 1
+//    var startRow = 0
+//    var endRow   = n - 1
+//    var startColumn = 0
+//    var endColumn = n - 1
+//
+//    while( startRow <= endRow && startColumn <= endColumn ){
+//        //Top row
+//        for column in startColumn...endColumn{
+//            matrices[startRow][column] = number
+//            number += 1
+//        }
+//        startRow += 1
+//
+//
+//        //Right column
+//        for row in startRow...endRow{
+//            matrices[row][endColumn] = number
+//            number += 1
+//        }
+//        endColumn -= 1
+//
+//        //Bottom row
+//        for column in stride(from: endColumn, to: startColumn-1, by: -1){
+//            matrices[endRow][column] = number
+//            number += 1
+//        }
+//        endRow -= 1
+//
+//        //Left column
+//        for row in stride(from: endRow, to: startRow-1, by: -1){
+//            matrices[row][startColumn] = number
+//            number += 1
+//        }
+//
+//        startColumn += 1
+//
+//    }
+//
+//    matrices.forEach{
+//        print($0)
+//    }
+//
+//}
+
+spiralMatrix(2)
